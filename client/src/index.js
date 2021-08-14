@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { LinksProvider } from "./LinksContext"
 
 ReactDOM.render(
   <React.StrictMode>
+    <LinksProvider >
     <App />
+    </LinksProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
